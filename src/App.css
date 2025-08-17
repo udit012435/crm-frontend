@@ -1,0 +1,210 @@
+
+#dashboardEmp{
+  
+  /* background-image: radial-gradient(circle, rgb(9, 255, 0), rgb(251, 255, 0), rgb(255, 0, 0)); */
+}
+#btn button{
+  background-color: rgb(0, 110, 255);
+  color: aliceblue;
+  padding: 3px 10px;
+}
+#btn button:hover{
+  background-color: rgb(0, 88, 204);
+  color: aliceblue;
+}
+.pending-leave-card {
+  background-color: #ffc107; /* custom yellow */
+  color: #533d3d;               /* text color */
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#Navbar{
+  background: linear-gradient(to bottom ,   rgb(148, 148, 148), rgb(46, 46, 46),  rgb(148, 148, 148));
+  color: white
+}
+#logout{
+  /* background: rgb(207, 0, 0); */
+  background-image: radial-gradient(circle, rgb(255, 0, 0), rgb(66, 0, 0));
+  border: none;
+  color: white;
+  border-radius: 50px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+ 
+}
+#logout:hover{
+  /* background: black; */
+    /* color: white; */
+    background-image: radial-gradient(circle, rgb(255, 0, 0), rgb(66, 0, 0));
+    box-shadow: 0 0 8px rgb(255, 0, 0), 0 0 16px rgb(255, 0, 0), 0 0 24px rgb(255, 0, 0);
+    transition: box-shadow 0.2s ease;
+}
+#loginHr{
+  border:3px solid black !important;
+  width:45px ;
+  margin:0;
+  padding:0;
+  border-radius:10px;
+}
+
+
+#sideBar{
+  width: 250px;
+}
+#dashBoardItems {
+
+}
+.dataTable{
+   max-height: 60vh; /* Or any fixed height you want, e.g., 60vh */
+  overflow-y: auto; 
+}
+.departmentTable{
+   max-height: 60vh; /* Or any fixed height you want, e.g., 60vh */
+  overflow-y: auto; 
+}
+.employeeDataTable{
+   max-height: 60vh; /* Or any fixed height you want, e.g., 60vh */
+  overflow-y: auto; 
+}
+#leaveTable{
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+
+.nav-link:hover {
+  /* background: linear-gradient(to bottom, aqua, rgb(0, 160, 160), aqua); */
+ cursor: pointer;
+}
+
+/* Active tab styling */
+.active-click {
+  background:linear-gradient(to bottom, aqua, rgb(0, 160, 160), aqua) !important;
+  border-radius: 5px;
+}
+
+#summaryBox{
+  border: 1px solid rgb(119, 119, 119);
+   width: 300px;
+}
+#addDepart{
+  background: rgb(10, 129, 39);
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+#addDepart:hover{
+  background: rgb(8, 97, 30);
+}
+#viewClose{
+  background: rgb(218, 89, 89);
+  color:aliceblue;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+#viewClose:hover{
+  background:  rgb(168, 53, 53);
+}
+#viewCard{
+  background: linear-gradient( to bottom right, rgb(26, 146, 167), rgb(0, 35, 80), rgb(26, 146, 167));
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.541);
+  color: aliceblue;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+#viewCard:hover{
+  background: linear-gradient( to bottom right, rgb(0, 35, 80), rgb(26, 146, 167),  rgb(0, 35, 80));
+  /* transform: scale(1.05) ; */
+  /* box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.541); */
+  box-shadow: 0 0 8px rgb(4, 0, 255), 0 0 16px rgb(1, 197, 247), 0 0 24px rgb(0, 204, 255);
+  transition: box-shadow 0.2s ease;
+  border: 2px solid white;
+  
+  
+}
+
+#summeryEmp{
+  /* border: 2px solid rgb(0, 172, 29); */
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px 20px;
+  background: rgb(152, 185, 137); 
+
+}
+#summeryEmp:hover{
+  box-shadow: 0 0 8px rgb(0, 255, 85), 0 0 16px rgb(0, 255, 85), 0 0 24px rgb(0, 255, 85);
+  transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  #summaryBox {
+    width: 250px; /* Adjust width for tablets */
+  }
+  #sideBar{
+    width: 200px;
+  }
+ 
+}
+@media (max-width: 600px) {
+  #summaryBox {
+    width: 100%; /* Make it responsive for smaller screens */
+  }
+  #sideBar{
+    width: 200px;
+  }
+ 
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.slide{
+  overflow: hidden;
+  margin-top: 50px;
+  padding: 60px 0;
+  background-color: white;
+  position: relative;
+}
+.slide:hover .slide-box{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.slide-box{
+  display: flex;
+  white-space: nowrap;
+  animation: 10s slide infinite linear;
+  
+}
+.slide-box h1{
+  margin: 0 30px;
+}
+.slide:before{
+  left: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+.slide:after{
+  right: 0;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+.slide:before,
+.slide:after{
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
