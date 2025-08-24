@@ -70,7 +70,7 @@ const Detail = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className='mt-3'>
-                                    <img className='img-fluid pb-3 ps-3 ' style={{ width:"70%", borderRadius:"30px"}} src={`http://localhost:5000/${leave.employeeId.userId.profileImage}`} alt="" />
+                                    <img className='img-fluid pb-3 ps-3 ' style={{ width:"70%", borderRadius:"30px"}} src={`https://crm-server-2-248k.onrender.com/${leave.employeeId.userId.profileImage}`} alt="" />
                                     <h3 className=" ms-5 ps-1 fw-bold">{leave.employeeId.name.toUpperCase()}</h3>
                                 </div>
                             </div>
