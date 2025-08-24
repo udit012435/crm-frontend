@@ -3,7 +3,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom'
-
+import { BASE_URL } from '../../config';
 
 
 const Detail = () => {
@@ -15,7 +15,7 @@ const Detail = () => {
     const fetchLeave = async () => {
         // setDepLoading(true)
         try {
-            const response = await axios.get(`http://localhost:5000/api/leave/detail/${id}`, {
+            const response = await axios.get(`${BASE_URL}leave/detail/${id}`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

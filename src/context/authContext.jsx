@@ -1,6 +1,7 @@
  import React, {useState, createContext, useContext, useEffect} from "react";
  import axios from 'axios';
 // import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../config";
 
 const userContext = createContext()
 
@@ -15,7 +16,7 @@ const authContext = ({children}) => {
             try {
                 const token = localStorage.getItem('token')
                 if(token){
-                    const response = await axios.get('http://localhost:5000/api/auth/verify',{
+                    const response = await axios.get(`${BASE_URL}auth/verify`,{
                         headers: {
                             "Authorization" : `Bearer ${token}`
                         }

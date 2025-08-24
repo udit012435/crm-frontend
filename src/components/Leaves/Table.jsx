@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { columns, LeaveButtons } from "../../utils/LeaveHelper";
 import DataTable from "react-data-table-component";
 import axios from "axios";
+import { BASE_URL } from "../../config";
 
 
 
@@ -13,7 +14,7 @@ const Table = () => {
 
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/leave`, {
+      const response = await axios.get(`${BASE_URL}leave`, {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem('token')}`
         }

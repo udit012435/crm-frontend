@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { fetchDepartments } from '../../utils/EmployeeHelper';
 import axios from 'axios';
+import { BASE_URL } from '../../config';
 
 const Edit = () => {
 
@@ -21,7 +22,7 @@ const Edit = () => {
         const fetchEmployee = async () => {
             // setDepLoading(true)
             try {
-                const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+                const response = await axios.get(`${BASE_URL}employee/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -69,7 +70,7 @@ const Edit = () => {
   
 
         try {
-            const response = await axios.put(`http://localhost:5000/api/employee/${id}`, employee, {
+            const response = await axios.put(`${BASE_URL}employee/${id}`, employee, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

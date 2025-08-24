@@ -2,6 +2,7 @@
 
 import { useNavigate } from "react-router-dom"
 import axios from "axios";
+import { BASE_URL } from "../config";
 
 export const columns = [
     {
@@ -32,7 +33,7 @@ export const DepartmentButton = ({Id, onDepartmentDelete}) => {
 
             try {
                 
-                const response = await axios.delete(`http://localhost:5000/api/department/${id}`, {
+                const response = await axios.delete(`${BASE_URL}department/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }

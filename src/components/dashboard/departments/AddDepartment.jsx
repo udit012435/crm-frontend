@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate, Link } from "react-router-dom";
-
+import { BASE_URL } from "../../../config";
 
 export const AddDepartment = () => {
     const [department, setDepartment] = useState({
@@ -20,7 +20,7 @@ export const AddDepartment = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/department/add', department, {
+            const response = await axios.post(`${BASE_URL}department/add`, department, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { fetchDepartments } from '../../utils/EmployeeHelper';
 import axios from 'axios';
+import { BASE_URL } from '../../config';
 
 const AddEmployee = () => {
   
@@ -36,7 +37,7 @@ const AddEmployee = () => {
     })
 
     try {
-                const response = await axios.post('http://localhost:5000/api/employee/add', formDataObj, {
+                const response = await axios.post(`${BASE_URL}employee/add`, formDataObj, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }

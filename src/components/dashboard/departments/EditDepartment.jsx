@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { BASE_URL } from "../../../config";
 
 const EditDepartment = () => {
     const {id} = useParams();
@@ -12,7 +13,7 @@ const EditDepartment = () => {
         const fetchDepartments = async () => {
             setDepLoading(true)
             try {
-                const response = await axios.get(`http://localhost:5000/api/department/${id}`, {
+                const response = await axios.get(`${BASE_URL}department/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }

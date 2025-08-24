@@ -4,13 +4,14 @@ import { FaBuilding, FaUsers, FaFileAlt, FaHourglassHalf, FaCheckCircle ,FaTimes
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../../config";
 
 export const AdminSummary = () => {
     const [summary, setSummary] = useState(null);
 
     const fetchSummary = async () => {
         try {
-            const summary = await axios.get(`http://localhost:5000/api/dashboard/summary`, {
+            const summary = await axios.get(`${BASE_URL}dashboard/summary`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

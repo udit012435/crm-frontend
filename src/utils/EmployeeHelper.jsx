@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Tooltip } from 'react-tooltip';
+import { BASE_URL } from "../config";
 
 export const columns = [
     {
@@ -42,7 +43,7 @@ export const columns = [
 export const fetchDepartments = async () => {
     let departments
     try {
-        const response = await axios.get(`http://localhost:5000/api/department/`, {
+        const response = await axios.get(`${BASE_URL}department/`, {
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`
             }

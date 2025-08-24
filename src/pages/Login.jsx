@@ -2,6 +2,7 @@ import React, { useState} from "react";
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
+import { BASE_URL } from "../config";
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ export const Login = () => {
     //    const {user} = useContext(userContext)
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/login", {email, password});
+            const response = await axios.post(BASE_URL + "auth/login", {email, password});
             // console.log(response)
             if(response.data.success){
                 // alert("Successfully login")
