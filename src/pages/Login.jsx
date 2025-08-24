@@ -17,7 +17,7 @@ export const Login = () => {
         e.preventDefault()
         try {
             const response = await axios.post(BASE_URL + "auth/login", {email, password});
-            // console.log(response)
+            console.log(response)
             if(response.data.success){
                 // alert("Successfully login")
                 login(response.data.user)

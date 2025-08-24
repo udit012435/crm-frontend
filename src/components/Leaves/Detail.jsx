@@ -40,7 +40,7 @@ const Detail = () => {
 
     const changeStatus = async(id, status) => {
         try {
-            const response = await axios.put(`http://localhost:5000/api/leave/${id}`,{status},
+            const response = await axios.put(`${BASE_URL}leave/${id}`,{status},
                 {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

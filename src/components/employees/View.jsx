@@ -15,7 +15,7 @@ const View = () => {
             const fetchEmployee = async () => {
                 // setDepLoading(true)
                 try {
-                    const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+                    const response = await axios.get(`${BASE_URL}employee/${id}`, {
                         headers: {
                             "Authorization": `Bearer ${localStorage.getItem('token')}`
                         }
@@ -50,7 +50,7 @@ const View = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div >
-                            <img className='img-fluid pb-3 ps-3' style={{borderRadius: "100%"}} src={`${BASE_URL}${employee.userId.profileImage}`} alt="" />
+                            <img className='img-fluid pb-3 ps-3' style={{borderRadius: "100%"}} src={`https://crm-server-2-248k.onrender.com/${employee.userId.profileImage}`} alt="" />
                         </div>
                     </div>
                     <div className="col-md-6">
