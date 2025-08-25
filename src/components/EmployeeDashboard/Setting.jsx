@@ -54,8 +54,8 @@ const Setting = () => {
     }
 
     return (
-        <div className="container-fluid d-flex justify-content-center" >
-            <div className="card shadow" style={{ width: "40%" }}>
+        <div className="container-fluid" id="fullContainer">
+            <div className="card shadow" style={{ width: "40%" }} id="loginBox">
                 <h3 className="text-center mb-4 mt-3">Change Password</h3>
                 <form onSubmit={handleSubmit} className="p-4">
                     <div className="mb-3" style={{ position: "relative" }}>

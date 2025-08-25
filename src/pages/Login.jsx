@@ -41,12 +41,9 @@ export const Login = () => {
 
     return(
         <div style={{height:"300px", background:"linear-gradient(to top , rgb(0, 133, 133), rgb(0, 46, 46))", color:"white"}}>
-            <div className="text-center pt-3">
-                <h1 className="">C R M</h1>
-            </div>
-            <div className="container d-flex justify-content-center alin-item-center mt-4">
-                <div className="card shadow" style={{ width: "35%", padding:"30px 30px" }}>
-                <form onSubmit={handleSubmit} className="">
+            <div className="container" id="fullContainer">
+                <div className="card shadow" id="loginBox">
+                <form onSubmit={handleSubmit}>
                     <h2>Login</h2>
                       <hr id="loginHr"/>
                         <div className="mb-3 mt-3">

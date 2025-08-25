@@ -12,10 +12,10 @@ export const AdminSideBar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
     return (
-         <>
+        <>
             {/* 3. Hamburger Toggle Button */}
             <div className="toggleButton">
-                <button className="sidebar-toggle-btn text-light" style={{marginTop: '-14px'}} onClick={toggleSidebar}>
+                <button className="sidebar-toggle-btn text-light" style={{ marginTop: '-14px' }} onClick={toggleSidebar}>
                     {/* Show FaTimes when open, FaBars when closed */}
                     {isSidebarOpen ? <FaTimes /> : <FaBars />}
                 </button>
@@ -54,7 +54,7 @@ export const AdminSideBar = () => {
                         onClick={toggleSidebar}
                     >
                         <FaUsers className="me-2" />
-                        <span>Students</span>
+                        <span>Employees</span>
                     </NavLink>
                     <NavLink
                         to="/admin-dashboard/departments"
@@ -64,7 +64,17 @@ export const AdminSideBar = () => {
                         onClick={toggleSidebar}
                     >
                         <FaBuilding className="me-2" />
-                        <span>Courses</span>
+                        <span>Departments</span>
+                    </NavLink>
+                    <NavLink
+                        to="/admin-dashboard/leaves"
+                        className={({ isActive }) =>
+                            `nav-link text-white d-flex align-items-center mb-2 ${isActive ? 'active-click' : ''}`
+                        }
+                    // activeClassName="active"
+                    >
+                        <FaCalendarAlt className="me-2" />
+                        <span>Leaves</span>
                     </NavLink>
                     <NavLink
                         to="/admin-dashboard/setting"

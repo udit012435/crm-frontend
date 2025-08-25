@@ -193,6 +193,43 @@
   transition: box-shadow 0.3s ease;
 }
 
+#fullContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 15px;
+}
+
+#loginBox {
+  width: 35%;
+  padding: 30px;
+}
+
+/* Tablet view (≤1024px) */
+@media (max-width: 1024px) {
+  #loginBox {
+    width: 60%;  /* wider for tablets */
+  }
+  #fullContainer {
+    align-items: center;
+  }
+}
+
+/* Mobile view (≤600px) */
+@media (max-width: 600px) {
+  #loginBox {
+    width: 100% !important;   /* full width on mobile */
+    padding: 20px;
+  }
+  #fullContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+}
+
+
 @media (max-width: 1024px) {
   #summaryBox {
     width: 250px; /* Adjust width for tablets */
