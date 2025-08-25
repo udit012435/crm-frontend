@@ -93,7 +93,7 @@ export const AdminSummary = () => {
                     </div>
                 </div>
             </div>
-            <div className="row mt-4">
+            <div className="row g-4 mt-1 mb-4">
                 <div className="col-md-4">
                     {/* <SummaryCard icon={<FaSignOutAlt />} text="Pending Leaves" number={summary.leaveSummary.pending} color="bg-black" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
