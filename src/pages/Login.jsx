@@ -40,7 +40,7 @@ export const Login = () => {
     }
 
     return(
-        <div style={{height:"300px", background:"linear-gradient(to top , rgb(0, 133, 133), rgb(0, 46, 46))", color:"white"}}>
+        <div style={{height:"50vh", background:"linear-gradient(to top , rgb(0, 133, 133), rgb(0, 46, 46))", color:"white"}}>
             <div className="container" id="fullContainer">
                 <div className="card shadow" id="loginBox">
                 <form onSubmit={handleSubmit}>
