@@ -54,7 +54,7 @@ const Setting = () => {
     }
 
     return (
-        <div className="container-fluid d-flex justify-content-center alin-item-center mt-5" >
+        <div className="container-fluid d-flex justify-content-center" >
             <div className="card shadow" style={{ width: "40%" }}>
                 <h3 className="text-center mb-4 mt-3">Change Password</h3>
                 <form onSubmit={handleSubmit} className="p-4">

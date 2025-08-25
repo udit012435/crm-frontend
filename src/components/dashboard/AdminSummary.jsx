@@ -42,13 +42,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaUsers />} text="Total Employees" number={summary.totalEmployees} color="bg-primary" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right, rgb(26, 146, 167), rgb(0, 35, 80), rgb(26, 146, 167))" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right, rgb(26, 146, 167), rgb(0, 35, 80), rgb(26, 146, 167))" }}>
                                     <FaUsers style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Total Employees</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.totalEmployees}</p>
                                 </div>
@@ -60,13 +60,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaBuilding />} text="Total Departments" number={summary.totalDepartments} color="bg-warning" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right, #EF88AD, #670D2F, #EF88AD)" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right, #EF88AD, #670D2F, #EF88AD)" }}>
                                     <FaBuilding style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Total Departments</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.totalDepartments}</p>
                                 </div>
@@ -78,13 +78,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaSignOutAlt />} text="Total Applied Leaves" number={summary.leaveSummary.total} color="bg-danger" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right, #FB9E3A, #EA2F14, #FB9E3A)" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right, #FB9E3A, #EA2F14, #FB9E3A)" }}>
                                     <FaFileAlt className="img-fluid" style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Total Applied Leaves</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.leaveSummary.total}</p>
                                 </div>
@@ -98,13 +98,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaSignOutAlt />} text="Pending Leaves" number={summary.leaveSummary.pending} color="bg-black" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right,rgb(255, 251, 0),rgb(95, 97, 0),rgb(255, 251, 0)" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right,rgb(255, 251, 0),rgb(95, 97, 0),rgb(255, 251, 0)" }}>
                                     <FaHourglassHalf   style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Pending Leaves</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.leaveSummary.pending}</p>
                                 </div>
@@ -116,13 +116,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaSignOutAlt />} text="Approved Leaves" number={summary.leaveSummary.approved} color="bg-danger" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right,rgb(21, 182, 0),rgb(11, 83, 17),rgb(21, 182, 0)" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right,rgb(21, 182, 0),rgb(11, 83, 17),rgb(21, 182, 0)" }}>
                                     <FaCheckCircle    style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Approved Leaves</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.leaveSummary.approved}</p>
                                 </div>
@@ -134,13 +134,13 @@ export const AdminSummary = () => {
                     {/* <SummaryCard icon={<FaSignOutAlt />} text="Rejected Leaves" number={summary.leaveSummary.rejected} color="bg-danger" /> */}
                     <div className="card" style={{ border: '1px solid black' }}>
                         <div className="row">
-                            <div className="col-md-4" >
-                                <div className="d-flex justify-content-center align-items-center  text-white h-100" style={{ background: "linear-gradient( to bottom right,rgb(255, 0, 0),rgb(138, 0, 0),rgb(255, 0, 0)" }}>
+                            <div className="col-md-5" >
+                                <div className="d-flex justify-content-center align-items-center  text-white h-100 py-3" style={{ background: "linear-gradient( to bottom right,rgb(255, 0, 0),rgb(138, 0, 0),rgb(255, 0, 0)" }}>
                                     <FaTimesCircle    style={{ fontSize: "50px" }} />
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <div className="mt-2">
+                            <div className="col-md-7">
+                                <div className="mt-2 text-center">
                                     <h5>Rejected Leaves</h5>
                                     <p style={{ fontSize: "30px", fontWeight: "500" }}>{summary.leaveSummary.rejected}</p>
                                 </div>

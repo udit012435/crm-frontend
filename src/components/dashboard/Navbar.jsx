@@ -8,10 +8,10 @@ export const Navbar = () => {
     return (
         <div className="container-fluid mb-3" id="Navbar">
             <div className="row">
-                <div className="col-md-6">
-                    <p className="pt-3" style={{fontWeight:"600"}}>Welcome {user.name.toUpperCase()}</p>
+                <div className="col-md-10">
+                    <p className="pt-3 text-center" style={{fontWeight:"600"}}>Welcome {user.name.toUpperCase()}</p>
                 </div>
-                <div className="col-md-6 text-end" id="logOut">
+                <div className="col-md-2 text-end" id="logOut">
                     <button  id="logout" title="Logout" className="me-2" onClick={logout}><FaSignOutAlt style={{marginBottom:"4px"}}/></button>
                 </div>
             </div>
