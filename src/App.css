@@ -50,8 +50,59 @@
 }
 
 
-#sideBar{
+/* #sideBar{
   width: 250px;
+} */
+
+#sideBar {
+    width: 250px;
+    height: 100vh; /* Set height for full visibility */
+    /* Add other styling like background-color, position, etc. */
+     background-color: rgb(38, 38, 38); /* Example background color, adjust as needed */
+    color: #fff;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide the toggle button by default on larger screens */
+.sidebar-toggle-btn {
+    display: none;
+}
+
+/* --- Mobile/Smaller Screens (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* 1. Initially hide the sidebar off-screen */
+    #sideBar {
+        width: 250px;
+        position: fixed; /* Fix its position */
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        /* Move the sidebar completely off-screen to the left */
+        transform: translateX(-100%); 
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow */
+    }
+
+    /* 2. Style when the 'open' class is applied */
+    #sideBar.open {
+        /* Move the sidebar into view */
+        transform: translateX(0); 
+    }
+
+    /* 3. Style and show the toggle button */
+    .sidebar-toggle-btn {
+        display: block; /* Show the button on small screens */
+        position: fixed; /* Keep it in place */
+        top: 15px;
+        left: 15px;
+        z-index: 1001; /* Ensure it is above the sidebar */
+        background: transparent;
+        border: none;
+        color: #000; /* Adjust color as needed */
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+    }
 }
 #dashBoardItems {
 
