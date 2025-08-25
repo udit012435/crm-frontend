@@ -211,6 +211,19 @@
   }
  
 }
+@media (max-width: 768px) {
+  #logOut{
+    margin-top: -55px !important;
+  }
+}
+#toggleButton{
+
+}
+@media (max-width: 768px) {
+  #toggleButton{
+    margin-top: -55px !important;
+  }
+}
 
 @keyframes slide {
   from{

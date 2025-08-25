@@ -11,8 +11,8 @@ export const Navbar = () => {
                 <div className="col-md-6">
                     <p className="pt-3" style={{fontWeight:"600"}}>Welcome {user.name.toUpperCase()}</p>
                 </div>
-                <div className="col-md-6 text-end">
-                    <button  id="logout" title="Logout" className="me-4" onClick={logout}><FaSignOutAlt style={{marginBottom:"4px"}}/></button>
+                <div className="col-md-6 text-end" id="logOut">
+                    <button  id="logout" title="Logout" className="me-2" onClick={logout}><FaSignOutAlt style={{marginBottom:"4px"}}/></button>
                 </div>
             </div>
         </div>
