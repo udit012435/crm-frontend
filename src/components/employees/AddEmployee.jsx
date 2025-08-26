@@ -60,7 +60,7 @@ const AddEmployee = () => {
   return (
     <>
       <div className="container">
-        <div className="card shadow mt-3 p-3">
+        <div className="card shadow mt-3 p-3 mb-3" style={{backgroundColor:"rgba(197, 197, 197, 1)"}}>
           <div className="card-title"><h3>Add Employee :</h3></div>
           <form onSubmit={handleSubmit}>
             <div className="row">

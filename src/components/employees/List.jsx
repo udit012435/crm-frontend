@@ -69,10 +69,10 @@ const List = () => {
       </div>
       <br />
       <div className="row mb-5 ">
-        <div className="col-md-6">
+        <div className="col-md-6 mb-3">
           <input
-            className="form-control pe-5 ps-2"
-            style={{ width: '60%', }} type="text"
+            className="form-control"
+            style={{ width: '40vh'}} type="text"
             placeholder="Search by employee name"
             onChange={handleFilter}
           />

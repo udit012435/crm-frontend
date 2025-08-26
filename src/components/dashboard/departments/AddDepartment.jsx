@@ -41,7 +41,7 @@ export const AddDepartment = () => {
 
     return (
         <div>
-            <div className="container py-3" style={{ maxWidth: '500px',maxHeight:"50%", background: "rgb(227, 227, 227)", borderRadius: '5px', marginTop: '2rem', height: '30rem', overflow:"hidden" }}>
+            <div className="container py-3" style={{ maxWidth: '500px', background: "rgba(197, 197, 197, 1)", borderRadius: '5px', marginTop: '2rem' }}>
                 <div className="px-4 py-2">
                     <h3 className="mb-4">Add Department</h3>
                     <form onSubmit={handleSubmit}>
@@ -60,7 +60,7 @@ export const AddDepartment = () => {
                         </div>
 
                         {/* Description */}
-                        <div className="mb-3">
+                        <div className="mb-5">
                             <label htmlFor="description" className="form-label">Description</label>
                             <textarea
                                 className="form-control"
@@ -77,10 +77,10 @@ export const AddDepartment = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 {/* <button type="submit" className="btn btn-primary mt-5 w-100 fw-bold">ADD DEPARTMENT</button> */}
-                                < Link to="/admin-dashboard/departments" className="btn btn-danger mt-5 w-100 fw-bold">CANCEL</Link>
+                                < Link to="/admin-dashboard/departments" className="btn btn-danger mt-3 w-100 fw-bold">CANCEL</Link>
                             </div>
                             <div className="col-md-6">
-                                <button type="submit" className="btn btn-primary mt-5 w-100 fw-bold">SAVE</button>
+                                <button type="submit" className="btn btn-primary mt-3 w-100 fw-bold">SAVE</button>
                             </div>
                         </div>
                         

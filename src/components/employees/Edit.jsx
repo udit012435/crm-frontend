@@ -93,7 +93,7 @@ const Edit = () => {
     return (
         <>{departments && employee ? (
             <div className="container d-flex justify-content-center align-items-center mt-5">
-                <div className="card shadow mt-3 px-5 py-3" style={{ width: "70%" }}>
+                <div className="card shadow mt-3 px-5 py-3" style={{ width: "auto" }}>
                     <div className="card-title"><h3>Edit Employee :</h3></div>
                     <form onSubmit={handleSubmit}>
                         <div className="row">

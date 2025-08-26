@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { BASE_URL } from "../../../config";
 
@@ -96,7 +96,17 @@ const EditDepartment = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <button type="submit" className="btn btn-primary mt-5 w-100 fw-bold">UPDATE DEPARTMENT</button>
+                    {/* <button type="submit" className="btn btn-primary mt-5 w-100 fw-bold">UPDATE DEPARTMENT</button> */}
+                    <div className="row">
+                        <div className="col-md-6">
+                            {/* <button type="submit" className="btn btn-primary mt-5 w-100 fw-bold">ADD DEPARTMENT</button> */}
+                            < Link to="/admin-dashboard/departments" className="btn btn-danger mt-3 w-100 fw-bold">CANCEL</Link>
+                        </div>
+                        <div className="col-md-6">
+                            {/* Submit Button */}
+                            <button type="submit" className="btn btn-primary mt-3 w-100 fw-bold">UPDATE DEPARTMENT</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
