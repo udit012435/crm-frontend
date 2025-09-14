@@ -72,6 +72,7 @@ export const AdminSideBar = () => {
                             `nav-link text-white d-flex align-items-center mb-2 ${isActive ? 'active-click' : ''}`
                         }
                     // activeClassName="active"
+                        onClick={toggleSidebar}
                     >
                         <FaCalendarAlt className="me-2" />
                         <span>Leaves</span>
