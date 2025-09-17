@@ -11,7 +11,7 @@ export const AdminSummary = () => {
 
     const fetchSummary = async () => {
         try {
-            const summary = await axios.get(`${BASE_URL}dashboard/summary`, {
+            const summary = await axios.get(`https://crm-server-4.onrender.com/api/dashboard/summary`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
