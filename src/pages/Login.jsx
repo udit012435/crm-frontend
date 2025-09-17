@@ -16,8 +16,10 @@ export const Login = () => {
     //    const {user} = useContext(userContext)
         e.preventDefault()
         try {
+            // const response = await axios.post(BASE_URL + "auth/login", {email, password});
             const response = await axios.post(BASE_URL + "auth/login", {email, password});
-            console.log(response)
+                                            //   https://crm-server-2-248k.onrender.com/api/auth/login
+            console.log("response of login",BASE_URL)
             if(response.data.success){
                 // alert("Successfully login")
                 login(response.data.user)

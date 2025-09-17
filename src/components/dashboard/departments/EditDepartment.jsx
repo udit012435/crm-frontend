@@ -15,7 +15,7 @@ const EditDepartment = () => {
             try {
                 const response = await axios.get(`${BASE_URL}department/${id}`, {
                     headers: {
-                        "Authorization": `Bearer ${localStorage.getItem('token')}`
+                    "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
                 });
                 if (response.data.success) {
@@ -41,7 +41,7 @@ const EditDepartment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:5000/api/department/${id}`, department, {
+            const response = await axios.put(`${BASE_URL}department/${id}`, department, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
