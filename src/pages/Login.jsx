@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
-import { BASE_URL } from "../config";
+// import { BASE_URL } from "../config";
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -19,7 +19,7 @@ export const Login = () => {
             // const response = await axios.post(BASE_URL + "auth/login", {email, password});
             const response = await axios.post("https://crm-server-4.onrender.com/api/auth/login", {email, password});
                                             //   https://crm-server-2-248k.onrender.com/api/auth/login
-            console.log("response of login",BASE_URL)
+            // console.log("response of login",BASE_URL)
             if(response.data.success){
                 // alert("Successfully login")
                 login(response.data.user)
