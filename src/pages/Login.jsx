@@ -17,7 +17,7 @@ export const Login = () => {
         e.preventDefault()
         try {
             // const response = await axios.post(BASE_URL + "auth/login", {email, password});
-            const response = await axios.post(BASE_URL + "auth/login", {email, password});
+            const response = await axios.post("https://crm-server-4.onrender.com/api/auth/login", {email, password});
                                             //   https://crm-server-2-248k.onrender.com/api/auth/login
             console.log("response of login",BASE_URL)
             if(response.data.success){
