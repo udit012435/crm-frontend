@@ -13,7 +13,7 @@ const List = () => {
   const fetchEmployees = async () => {
     setEmpLoading(true);
     try {
-      const response = await axios.get(`${BASE_URL}employee/`, {
+      const response = await axios.get(`https://crm-server-4.onrender.com/api/employee/`, {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
