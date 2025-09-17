@@ -28,7 +28,7 @@ const List = () => {
             name: emp.name, // <<<<<<< CHANGED THIS LINE
             dob: new Date(emp.dob).toLocaleDateString(),
             profileImage: emp.userId && emp.userId.profileImage ? // Added null checks for userId and profileImage
-              <img style={{ borderRadius: "50px", width: "45%" }} className='img-fluid ' src={`https://crm-server-4.onrender.com/api/${emp.userId.profileImage}`} /> :
+              <img style={{ borderRadius: "50px", width: "45%" }} className='img-fluid ' src={`https://crm-server-4.onrender.com/api/public/${emp.userId.profileImage}`} /> :
               <span>No Image</span>, // Fallback if no image
             action: (<EmployeeButton Id={emp._id} />),
           }));
