@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useAuth } from '../../context/authContext';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { BASE_URL } from '../../config';
+// import { BASE_URL } from '../../config';
 
 const AddLeave = () => {
     const { user } = useAuth();
@@ -20,7 +20,7 @@ const AddLeave = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${BASE_URL}leave/add`,leave,
+            const response = await axios.post(`https://crm-server-4.onrender.com/api/leave/add`,leave,
                  {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

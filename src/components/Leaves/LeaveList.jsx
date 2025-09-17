@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../../context/authContext';
-import { BASE_URL } from '../../config';
+// import { BASE_URL } from '../../config';
 
 const LeaveList = () => {
   const [leaves, setLeaves] = useState(null);
@@ -14,7 +14,7 @@ const LeaveList = () => {
   const fetchLeaves = async () => {
      setLeaveLoading(true)
     try {
-        const response = await axios.get(`${BASE_URL}leave/${id}/${user.role}`, {
+        const response = await axios.get(`https://crm-server-4.onrender.com/api/leave/${id}/${user.role}`, {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           },
